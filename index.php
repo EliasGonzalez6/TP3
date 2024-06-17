@@ -92,14 +92,14 @@
 <div class="container d-flex justify-content-center align-items-center min-vh-100">
     <div class="container-custom">
         <h2 class="mb-4 text-center">Iniciar Sesión</h2>
-        <form>
+        <form action="controladores/usuarios/login.php" method="POST">
             <div class="mb-3">
                 <label for="email" class="form-label">Correo Electrónico</label>
-                <input type="email" class="form-control" id="email" placeholder="Ingrese su correo electrónico">
+                <input type="email" name="email" class="form-control" id="email" placeholder="Ingrese su correo electrónico">
             </div>
             <div class="mb-3">
                 <label for="password" class="form-label">Contraseña</label>
-                <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña">
+                <input type="password"name="password" class="form-control" id="password" placeholder="Ingrese su contraseña">
             </div>
             <div class="d-flex justify-content-between mt-4">
                 <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
