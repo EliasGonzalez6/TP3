@@ -1,29 +1,26 @@
 <?php
-session_start();
+    session_start();
 
-include('../global/conexion.php');
+    include('../global/conexion.php');
 
-$correo = $_REQUEST['email'];
-$clave = $_REQUEST['password'];
+    $nombre = $_REQUEST['nombre'];
+    $dni = $_REQUEST['dni'];
+    $email = $_REQUEST['email'];
+    $rango = $_REQUEST['rango'];
+    $password = $_REQUEST['password'];
+    $confirmPassword = $_REQUEST['confirmPassword'];
 
-$resultado = ejecutarConsulta("SELECT * FROM usuarios where correo = '$correo' ");
-$fila = $resultado->fetch_assoc();
+    if($password === $confirmPassword){
+        $query = "INSERT INTO usuario (`nombre`, `dni`, `email`, `clave`, `rango`) VALUES ('$nombre','$dni','$email','$password','$rango')";        
+        $result = ejecutarConsulta($query);        
 
-if(isset($fila) && !empty($fila)){
-    if($clave === $fila['clave']){
-        
-        //Aqui se crea la variable de sesion para el contador
-        $resultado = ejecutarConsulta("SELECT count(*) as cuenta FROM usuarios");
+        $resultado = ejecutarConsulta("SELECT count(*) as cuenta FROM usuario");
         $fila = $resultado->fetch_assoc();
         $_SESSION['CuentaUsuario'] = $fila['cuenta'];
+        $fila = $resultado->fetch_assoc();
 
-        //Inicia la sesion
         header('Location: ../../vistas/global/inicio.php');
     }
     else{
-        header('Location: ../../index.php');
-    }    
-}
-else{
-    header('Location: ../../index.php');
-}
+        header('Location: crearUsuario.php');
+    }

@@ -68,8 +68,8 @@
 
     <div class="container d-flex justify-content-center align-items-center min-vh-100">
         <div class="container-custom">
-            <h2 class="mb-4 text-center">Registrar Usuario</h2>
-            <form action="controladores/usuarios/crear.php" method="POST">
+            <h2 class="mb-4 text-center">Registrar Oficial</h2>
+            <form action="../../controladores/usuarios/crear.php" method="POST">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="mb-3">
@@ -88,15 +88,20 @@
                     <div class="col-md-6">
                         <div class="mb-3">
                             <label for="rango" class="form-label">Rango</label>
-                            <input type="text" class="form-control" name="rango" id="rango" placeholder="Ingrese su rango">
+                            <select class="form-control" name="rango" id="rango">
+                                <option value="COMISARIO">COMISARIO</option>
+                                <option value="SUPERVISOR">SUPERVISOR</option>
+                                <option value="OFICIAL">OFICIAL</option>                            
+                            </select>
+                            <!--<input type="text" class="form-control" name="rango" id="rango" placeholder="Ingrese su rango">-->
                         </div>
                         <div class="mb-3">
                             <label for="password" class="form-label">Contraseña</label>
                             <input type="password" class="form-control" name="password" id="password" placeholder="Ingrese su contraseña">
                         </div>
                         <div class="mb-3">
-                            <label for="confirm-password" class="form-label">Confirmar Contraseña</label>
-                            <input type="password" class="form-control" name="confirm-password" id="confirm-password" placeholder="Confirme su contraseña">
+                            <label for="confirmPassword" class="form-label">Confirmar Contraseña</label>
+                            <input type="password" class="form-control" name="confirmPassword" id="confirmPassword" placeholder="Confirme su contraseña">
                         </div>
                     </div>
                 </div>

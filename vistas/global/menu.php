@@ -9,28 +9,19 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Inicio</a>
+                        <a class="nav-link" href="../../vistas/global/inicio.php">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Delitos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Tipologia</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Rangos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Roles</a>
-                    </li>
+                    </li>                                      
                     <li class="nav-item">
                         <a class="nav-link" href="#">Oficiales</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Barrios</a>
-                    </li>
+                    </li>                    
                     <li class="nav-item">
                         <a class="nav-link" href="#">Comunas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Mi Perfil</a>
                     </li>
                 </ul>
             </div>
