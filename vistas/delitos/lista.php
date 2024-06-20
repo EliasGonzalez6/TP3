@@ -26,19 +26,36 @@ include("../global/header.php");
                             <th scope="col">Barrio</th>
                             <th scope="col">Uso de Arma</th>
                             <th scope="col">Oficial</th>
+                            <th scope="col">Acciones</th>
                         </tr>
                     </thead>
-                    <tbody>                        
-                        <tr>
-                            <td>Robo</td>
-                            <td>14:00</td>
-                            <td>Enero</td>
-                            <td>Lunes</td>
-                            <td>Comuna 14</td>
-                            <td>Palermo</td>
-                            <td>Sí</td>
-                            <td>Oficial Pérez</td>
-                        </tr>                                               
+                    <tbody> 
+                        <?php                         
+                            foreach($_SESSION['listaDelitos'] as $delito) {
+                        ?>                       
+                            <tr>
+                                <td><?php echo $delito['tipo_delito']?></td>
+                                <td><?php echo $delito['hora']?></td>                                
+                                <td><?php echo $delito['nombre_mes']?></td>                                
+                                <td><?php echo $delito['nombre_dia']?></td>                                                                
+                                <td><?php echo $delito['Comuna']?></td>
+                                <td><?php echo $delito['Barrio']?></td>
+                                <td><?php echo $delito['uso_arma']?></td>                                
+                                <td><?php echo $delito['oficialNombre']?></td>
+                                <td>                      
+                                    <form action="../../controladores/delitos/editar.php" method="POST" style="display: inline-block;">
+                                        <input type="hidden" name="id_delito" value="<?php echo $delito['id_delito']?>">
+                                        <button type="submit" class="btn btn-outline-primary btn-sm">Editar</button>
+                                    </form>
+                                    <form action="../../controladores/delitos/eliminar.php" method="POST" style="display: inline-block;">              
+                                        <input type="hidden" name="id_delito" value="<?php echo $delito['id_delito']?>">
+                                        <button type="submit" class="btn btn-outline-danger btn-sm" onclick="eliminar();">Elminar</button>
+                                    </form>                                    
+                                </td>
+                            </tr>   
+                        <?php 
+                            } 
+                        ?>                                             
                     </tbody>
                 </table>
             </div>
