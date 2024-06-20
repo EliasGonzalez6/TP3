@@ -16,9 +16,6 @@
                     </li>                                      
                     <li class="nav-item">
                         <a class="nav-link" href="../../controladores/usuarios/lista.php">Oficiales</a>
-                    </li>                    
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Comunas</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Mi Perfil</a>
