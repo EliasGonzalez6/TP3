@@ -12,6 +12,8 @@ $fila = $resultado->fetch_assoc();
 if(isset($fila) && !empty($fila)){
     if($clave === $fila['clave']){
         
+        $_SESSION['loginUsuario'] = $fila;
+
         //Aqui se crea la variable de sesion para el contador
         $resultado = ejecutarConsulta("SELECT count(*) as cuenta FROM usuario");
         $fila = $resultado->fetch_assoc();

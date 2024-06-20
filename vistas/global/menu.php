@@ -18,7 +18,7 @@
                         <a class="nav-link" href="../../controladores/usuarios/lista.php">Oficiales</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Mi Perfil</a>
+                        <a class="nav-link" href="../../vistas/usuarios/perfil.php">Mi Perfil</a>
                     </li>
                 </ul>
             </div>

@@ -75,3 +75,11 @@ footer p {
 .btn-create {
     margin-bottom: 15px;
 }
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 60px;
+    object-fit: cover;
+}
