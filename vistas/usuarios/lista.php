@@ -11,7 +11,7 @@
     <div class="container d-flex justify-content-center align-items-center min-vh-100">
         <div class="container-custom">
             <div class="d-flex justify-content-end">                
-                <a class="btn btn-success btn-create" href="#">Crear</a>
+                <a class="btn btn-success btn-create" href="crear.php">Crear</a>
             </div>
                 <div class="table-responsive">
                     <table class="table table-dark table-striped table-bordered">
