@@ -49,7 +49,7 @@ include("../global/header.php");
                                     </form>
                                     <form action="../../controladores/delitos/eliminar.php" method="POST" style="display: inline-block;">              
                                         <input type="hidden" name="id_delito" value="<?php echo $delito['id_delito']?>">
-                                        <button type="submit" class="btn btn-outline-danger btn-sm" onclick="eliminar();">Elminar</button>
+                                        <button type="submit" class="btn btn-outline-danger btn-sm">Elminar</button>
                                     </form>                                    
                                 </td>
                             </tr>   

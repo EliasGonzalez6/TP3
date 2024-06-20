@@ -12,6 +12,7 @@ include('../global/header.php')
         <div class="container-custom mt-5">
             <h2 class="text-center mb-4">Editar Delito</h2>
             <form action="../../controladores/delitos/modificar.php" method="POST">
+                <input type="hidden" name="id_delito" value="<?php echo $_SESSION['editarDelito']['id_delito']?>">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="mb-3">
