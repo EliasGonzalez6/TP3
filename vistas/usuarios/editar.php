@@ -31,7 +31,8 @@
                     <div class="col-md-6">
                         <div class="mb-3">
                             <label for="rango" class="form-label">Rango</label>
-                            <select class="form-control" name="rango" id="rango">
+                            <select class="form-control" name="rango" id="rango" required>
+                                <option value="">Seleccionar</option>
                                 <?php if($_SESSION['editarUsuario']['rango'] == "COMISARIO"){?>
                                     <option value="COMISARIO" selected>COMISARIO</option>
                                     <option value="SUPERVISOR">SUPERVISOR</option>
