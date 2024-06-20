@@ -19,6 +19,10 @@ if(isset($fila) && !empty($fila)){
         $fila = $resultado->fetch_assoc();
         $_SESSION['cuentaUsuario'] = $fila['cuenta'];
 
+        $resultado = ejecutarConsulta("SELECT count(*) as cuenta FROM delito");
+        $fila = $resultado->fetch_assoc();
+        $_SESSION['cuentaDelito'] = $fila['cuenta'];
+
         //Inicia la sesion
         header('Location: ../../vistas/global/inicio.php');
     }

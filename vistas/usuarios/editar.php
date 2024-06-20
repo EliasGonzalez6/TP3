@@ -58,8 +58,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="d-flex justify-content-between mt-4">
-                    <button type="submit" class="btn btn-success">Editar</button>
+                <div class="d-flex mt-4">
+                    <button type="submit" class="btn btn-success" style="margin-right:10px;">Editar</button>
                     <a class="btn btn-danger" href="../../controladores/usuarios/lista.php">Volver</a>                    
                 </div>
             </form>

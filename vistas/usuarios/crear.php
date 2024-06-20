@@ -46,8 +46,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="d-flex justify-content-between mt-4">
-                    <button type="submit" class="btn btn-success">Registrar</button>
+                <div class="d-flex mt-4">
+                    <button type="submit" class="btn btn-success" style="margin-right:10px;">Registrar</button>
                     <button type="reset" class="btn btn-danger">Borrar</button>
                 </div>
             </form>

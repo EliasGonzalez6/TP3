@@ -12,7 +12,7 @@
                         <a class="nav-link" href="../../vistas/global/inicio.php">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Delitos</a>
+                        <a class="nav-link" href="../../controladores/delitos/lista.php">Delitos</a>
                     </li>                                      
                     <li class="nav-item">
                         <a class="nav-link" href="../../controladores/usuarios/lista.php">Oficiales</a>

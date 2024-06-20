@@ -10,10 +10,11 @@
 
     <div class="container d-flex justify-content-center align-items-center min-vh-100">
         <div class="container-custom">
+            <h2 class="mb-4 text-center">Lista de Oficiales</h2>
             <div class="d-flex justify-content-end">                
                 <a class="btn btn-success btn-create" href="crear.php">Crear</a>
             </div>
-                <div class="table-responsive">
+                <div class="table-responsive">                    
                     <table class="table table-dark table-striped table-bordered">
                         <thead>
                             <tr class="text-center">
