@@ -40,7 +40,7 @@
                                     </form>
                                     <form action="../../controladores/usuarios/eliminar.php" method="POST" style="display: inline-block;">              
                                         <input type="hidden" name="id_usuario" value="<?php echo $usuario['id_usuarios']?>">
-                                        <button type="submit" class="btn btn-outline-danger btn-sm">Elminar</button>
+                                        <button type="submit" class="btn btn-outline-danger btn-sm" onclick="eliminar();">Elminar</button>
                                     </form>                                    
                                 </td>
                             </tr>
@@ -52,7 +52,7 @@
                 </div>
             </div>  
         </div>
-    </div>
+    </div>    
     <?php
         include('../global/footer.php')
     ?>    
