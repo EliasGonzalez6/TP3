@@ -32,10 +32,16 @@
                                 <td><?php echo $usuario['nombre']?></td>
                                 <td><?php echo $usuario['dni']?></td>
                                 <td><?php echo $usuario['email']?></td>
-                                <td><?php echo $usuario['rango']?></td>                                
-                                <td>
-                                    <button class="btn btn-outline-primary btn-sm">Editar</button>
-                                    <button class="btn btn-outline-danger btn-sm">Eliminar</button>
+                                <td><?php echo $usuario['rango']?></td>
+                                <td>                      
+                                    <form action="../../controladores/usuarios/editar.php" method="POST" style="display: inline-block;">
+                                        <input type="hidden" name="id_usuario" value="<?php echo $usuario['id_usuarios']?>">
+                                        <button type="submit" class="btn btn-outline-primary btn-sm">Editar</button>
+                                    </form>
+                                    <form action="../../controladores/usuarios/eliminar.php" method="POST" style="display: inline-block;">              
+                                        <input type="hidden" name="id_usuario" value="<?php echo $usuario['id_usuarios']?>">
+                                        <button type="submit" class="btn btn-outline-danger btn-sm">Elminar</button>
+                                    </form>                                    
                                 </td>
                             </tr>
                         <?php 

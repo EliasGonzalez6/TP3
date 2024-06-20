@@ -1,6 +1,6 @@
 <?php
-        include('../global/header.php')
-    ?>
+    include('../global/header.php')
+?>
 
 <body>
     <?php
