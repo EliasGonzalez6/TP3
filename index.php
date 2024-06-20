@@ -27,11 +27,11 @@
             <form action="controladores/usuarios/login.php" method="POST">
                 <div class="mb-3">
                     <label for="email" class="form-label">Correo Electrónico</label>
-                    <input type="email" name="email" class="form-control" id="email" placeholder="Ingrese su correo electrónico" value="demo@gmail.com">
+                    <input type="email" name="email" class="form-control" id="email" placeholder="Ingrese su correo electrónico">
                 </div>
                 <div class="mb-3">
                     <label for="password" class="form-label">Contraseña</label>
-                    <input type="password"name="password" class="form-control" id="password" placeholder="Ingrese su contraseña" value="123">
+                    <input type="password"name="password" class="form-control" id="password" placeholder="Ingrese su contraseña">
                 </div>
                 <div class="d-flex justify-content-between mt-4">
                     <button type="submit" class="btn btn-success">Iniciar Sesión</button>

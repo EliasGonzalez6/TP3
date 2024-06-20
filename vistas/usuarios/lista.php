@@ -34,15 +34,19 @@
                                 <td><?php echo $usuario['dni']?></td>
                                 <td><?php echo $usuario['email']?></td>
                                 <td><?php echo $usuario['rango']?></td>
-                                <td>                      
-                                    <form action="../../controladores/usuarios/editar.php" method="POST" style="display: inline-block;">
-                                        <input type="hidden" name="id_usuario" value="<?php echo $usuario['id_usuarios']?>">
-                                        <button type="submit" class="btn btn-outline-primary btn-sm">Editar</button>
-                                    </form>
-                                    <form action="../../controladores/usuarios/eliminar.php" method="POST" style="display: inline-block;">              
-                                        <input type="hidden" name="id_usuario" value="<?php echo $usuario['id_usuarios']?>">
-                                        <button type="submit" class="btn btn-outline-danger btn-sm">Elminar</button>
-                                    </form>                                    
+                                <td>         
+                                    <?php if($_SESSION['loginUsuario']['rango']=='COMISARIO' || $_SESSION['loginUsuario']['rango']=='SUPERVISOR') {?>                
+                                        <form action="../../controladores/usuarios/editar.php" method="POST" style="display: inline-block;">
+                                            <input type="hidden" name="id_usuario" value="<?php echo $usuario['id_usuarios']?>">
+                                            <button type="submit" class="btn btn-outline-primary btn-sm">Editar</button>
+                                        </form>
+                                    <?php }?>
+                                    <?php if($_SESSION['loginUsuario']['rango']=='COMISARIO') {?>                      
+                                        <form action="../../controladores/usuarios/eliminar.php" method="POST" style="display: inline-block;">              
+                                            <input type="hidden" name="id_usuario" value="<?php echo $usuario['id_usuarios']?>">
+                                            <button type="submit" class="btn btn-outline-danger btn-sm">Elminar</button>
+                                        </form>                                    
+                                    <?php }?>
                                 </td>
                             </tr>
                         <?php 

@@ -21,7 +21,7 @@
                     </div>
                 </div>                
                 <div class="card col-6" style="width: 18rem; margin-left:20px;">
-                    <img src="../../recursos/img/policiainteligenciaartificial.avif" class="card-img-top" alt="...">
+                    <img src="../../recursos/img/delitos.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title"><?php echo $_SESSION['cuentaDelito']; ?></h5>
                         <p class="card-text">Delitos registrados</p>

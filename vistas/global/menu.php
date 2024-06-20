@@ -20,6 +20,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="../../vistas/usuarios/perfil.php">Mi Perfil</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../controladores/usuarios/logout.php">Salir</a>
+                    </li>
                 </ul>
             </div>
         </div>

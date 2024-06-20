@@ -42,15 +42,20 @@ include("../global/header.php");
                                 <td><?php echo $delito['Barrio']?></td>
                                 <td><?php echo $delito['uso_arma']?></td>                                
                                 <td><?php echo $delito['oficialNombre']?></td>
-                                <td>                      
-                                    <form action="../../controladores/delitos/editar.php" method="POST" style="display: inline-block;">
-                                        <input type="hidden" name="id_delito" value="<?php echo $delito['id_delito']?>">
-                                        <button type="submit" class="btn btn-outline-primary btn-sm">Editar</button>
-                                    </form>
-                                    <form action="../../controladores/delitos/eliminar.php" method="POST" style="display: inline-block;">              
-                                        <input type="hidden" name="id_delito" value="<?php echo $delito['id_delito']?>">
-                                        <button type="submit" class="btn btn-outline-danger btn-sm">Elminar</button>
-                                    </form>                                    
+                                <td>
+                                    <?php if($_SESSION['loginUsuario']['rango']=='COMISARIO' || $_SESSION['loginUsuario']['rango']=='SUPERVISOR') {?>                      
+                                        <form action="../../controladores/delitos/editar.php" method="POST" style="display: inline-block;">
+                                            <input type="hidden" name="id_delito" value="<?php echo $delito['id_delito']?>">
+                                            <button type="submit" class="btn btn-outline-primary btn-sm">Editar</button>
+                                        </form>
+                                    <?php }?>
+
+                                    <?php if($_SESSION['loginUsuario']['rango']=='COMISARIO') {?>                      
+                                        <form action="../../controladores/delitos/eliminar.php" method="POST" style="display: inline-block;">              
+                                            <input type="hidden" name="id_delito" value="<?php echo $delito['id_delito']?>">
+                                            <button type="submit" class="btn btn-outline-danger btn-sm">Elminar</button>
+                                        </form>  
+                                    <?php }?>                                  
                                 </td>
                             </tr>   
                         <?php 
