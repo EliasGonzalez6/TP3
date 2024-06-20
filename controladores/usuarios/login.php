@@ -15,7 +15,7 @@ if(isset($fila) && !empty($fila)){
         //Aqui se crea la variable de sesion para el contador
         $resultado = ejecutarConsulta("SELECT count(*) as cuenta FROM usuario");
         $fila = $resultado->fetch_assoc();
-        $_SESSION['CuentaUsuario'] = $fila['cuenta'];
+        $_SESSION['cuentaUsuario'] = $fila['cuenta'];
 
         //Inicia la sesion
         header('Location: ../../vistas/global/inicio.php');

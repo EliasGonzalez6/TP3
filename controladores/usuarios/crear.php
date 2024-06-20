@@ -16,8 +16,7 @@
 
         $resultado = ejecutarConsulta("SELECT count(*) as cuenta FROM usuario");
         $fila = $resultado->fetch_assoc();
-        $_SESSION['CuentaUsuario'] = $fila['cuenta'];
-        $fila = $resultado->fetch_assoc();
+        $_SESSION['cuentaUsuario'] = $fila['cuenta'];        
 
         header('Location: ../../vistas/global/inicio.php');
     }

@@ -1,51 +1,77 @@
 body {
-        font-family: Arial, sans-serif;
-        background: url('https://us.123rf.com/450wm/sbhaumik/sbhaumik2306/sbhaumik230600070/216973109-luz-de-emergencia-del-coche-patrulla-de-la-polic%C3%ADa-en-la-calle-por-la-noche.jr=6') center/cover no-repeat;
-        color: #000000;
-        margin: 0;
-    }
-    .navbar {
-        background-color: #34495e;
-    }
-    .navbar .navbar-brand,
-    .navbar-nav .nav-link {
-        color: #ecf0f1 !important;
-    }
-    .navbar-brand img {
-        max-height: 45px; 
-        width: auto; 
-    }
-    .container-custom {
-        background-color: #dbdbdbcc;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-        margin-top: 50px;
-        width: 400px;
-    }
-    .form-control {
-        background-color: rgba(255, 255, 255, 0.2);
-        color: #ecf0f1;
-    }
-    .form-control:focus {
-        background-color: rgba(255, 255, 255, 0.3);
-        color: #ecf0f1;
-    }
+    font-family: Arial, sans-serif;
+    background: url('https://us.123rf.com/450wm/sbhaumik/sbhaumik2306/sbhaumik230600070/216973109-luz-de-emergencia-del-coche-patrulla-de-la-polic%C3%ADa-en-la-calle-por-la-noche.jr=6') center/cover no-repeat;
+    color: #000000;
+    margin: 0;
+}
+
+.navbar {
+    background-color: #34495e;
+}
+
+.navbar .navbar-brand,
+.navbar-nav .nav-link {
+    color: #ecf0f1 !important;
+}
+
+.navbar-brand img {
+    max-height: 45px; 
+    width: auto; 
+}
+
+.container-custom {
+    background-color: #dbdbdbcc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    margin-top: 50px;
+    min-width: max-content;
+}
+
+.form-control {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #000;
+}
+
+.form-control:focus {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #000;
+}
+
+footer {
+    background-color: #34495e;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+}
+
+footer p {
+    margin: 0;
+    color: #ecf0f1;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 767px) {
     footer {
-        background-color: #34495e;
-        padding: 10px;
-        text-align: center;
-        width: 100%;
-        bottom: 0;
-        position: fixed;
+        position: relative; /* Cambia la posición a relativa en dispositivos móviles */
     }
-    footer p {
-        margin: 0;
-        color: #ecf0f1;
-    }
-    /* Media query para dispositivos móviles */
-    @media (max-width: 767px) {
-        footer {
-            position: relative; /* Cambia la posición a relativa en dispositivos móviles */
-        }
-    }
+}
+
+.table {
+    background-color: #34495e;
+}
+
+.table thead th {
+    color: #ecf0f1;
+    background-color: #2c3e50;
+}
+
+.table tbody tr {
+    color: #ecf0f1;
+}
+
+.btn-create {
+    margin-bottom: 15px;
+}
